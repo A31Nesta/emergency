@@ -3,6 +3,7 @@ use std::net::SocketAddr;
 use axum::{routing::get, Router};
 use handlers::generate;
 use state::StateStruct;
+use tower_http::cors::CorsLayer;
 
 mod state;
 mod handlers;
@@ -17,6 +18,7 @@ async fn main() {
     let router = Router::new()
         .route("/api/{dif}", get(generate))
         .with_state(state)
+        .layer(CorsLayer::permissive())
     ;
     
     let addr = SocketAddr::from(([0, 0, 0, 0], 3000));
