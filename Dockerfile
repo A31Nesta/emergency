@@ -1,4 +1,4 @@
-FROM rust:1.87.0 AS build-env
+FROM rust:slim AS build-env
 WORKDIR /emg
 COPY . /emg
 RUN cargo build --release

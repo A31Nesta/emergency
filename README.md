@@ -19,7 +19,7 @@ cd emergency/
 ## With Docker
 
 ```bash
-docker build -t emergency .
+docker build -t emergency . --platform=linux/amd64
 ```
 
 ## Native
