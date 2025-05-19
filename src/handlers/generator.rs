@@ -7,6 +7,7 @@ pub enum Difficulty {
 }
 
 // Ported from JavaScript
+// Generator functions are in state/generator_functions.rs
 pub fn generate_equation(state: &mut StateStruct, difficulty: Difficulty) -> EquationDto {
     // Gambling twice increases our chances of success ofc
     match difficulty {
