@@ -1,8 +1,10 @@
 # Emergency
 
-Emergency (`emg`) is Mathgeon's backend made with Axum in Rust.  
-It serves the Mathgeon front-end as a static page and
-generates random equations for the game.
+Emergency (`emg`) is a tiny backend made with Axum in Rust.  
+It serves SPAs and nothing else.
+
+This is a stripped-down version of the backend used for
+Mathgeon, a math-based web game.
 
 # Building
 
@@ -29,7 +31,7 @@ cargo build --release
 
 # Running
 
-To serve the Mathgeon frontend (Single Page Application),
+To serve a frontend (Single Page Application),
 Emergency reads the `EMG_FRONTEND_PATH` environment variable.  
 If the environment vaiable is not set, it defaults to
 `/opt/emg_frontend/`. The "frontend path" should contain the
@@ -38,5 +40,5 @@ If the environment vaiable is not set, it defaults to
 You can run the server locally with the following command:
 
 ```bash
-EMG_FRONTEND_PATH=/path/to/mathgeon/dist cargo run --release
+EMG_FRONTEND_PATH=/path/to/dist cargo run --release
 ```
