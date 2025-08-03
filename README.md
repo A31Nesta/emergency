@@ -4,7 +4,8 @@ Emergency (`emg`) is a tiny backend made with Axum in Rust.
 It serves SPAs and nothing else.
 
 This is a stripped-down version of the backend used for
-Mathgeon, a math-based web game.
+Mathgeon, a math-based web game. For the original Mathgeon
+backend, see the [`mathgeon` branch](https://github.com/A31Nesta/emergency/tree/mathgeon)
 
 # Building
 
